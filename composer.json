@@ -8,7 +8,19 @@
             "email": "austen.cameron@gmail.com"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "AustenCam\\Preset\\": "src/"
+        }
+    },
     "require": {
         "php": "^7.4"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AustenCam\\Preset\\Providers\\RadProvider"
+            ]
+        }
     }
 }
