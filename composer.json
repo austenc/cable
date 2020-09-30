@@ -1,0 +1,14 @@
+{
+    "name": "austencam/radical-preset",
+    "description": "A Laravel authentication preset with more rad.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Austen Cameron",
+            "email": "austen.cameron@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.4"
+    }
+}
