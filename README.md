@@ -1,33 +1,58 @@
 # Cable
 
-A Laravel Livewire authentication preset. As in, a bundle of wires.
+A Laravel Livewire authentication preset. As in, a bundle of wires. 🚠
+
+**This is meant to be used for new projects, not existing ones.**
+
+![](cover.png)
+
+## Requirements
+
+-   Laravel 8+
+-   PHP 7.4+
 
 ## Installation
 
-This will be improved next week, but for now, here's the best way to do it.
-First, create a new Laravel 8 project.
-Add the following to your `composer.json` file:
+To install the preset, simply require it via composer, and run the command.
 
-```json
-"repositories": [
-    {
-        "type": "git",
-        "url": "git@github.com:austenc/rad-preset.git"
-    }
-]
+```sh
+composer require austencam/cable
+php artisan cable:run
 ```
 
-Once that is done, run the following commands in this order:
+If you're really crazy, you can use add this alias to your `.zshrc` or `.bashrc` file:
 
-```shell
-composer update
-npm install
-npm run dev
+```sh
+function newapp() {
+    composer create-project --prefer-dist laravel/laravel ${1:-newapp}
+    cd ${1:-newapp}
+    composer require austencam/cable
+    php artisan cable:run
+    cp .env.example .env
+    php artisan key:generate
+}
 ```
 
-## To Do:
+Then you can run `newapp your-app-name` to start a fresh laravel project with the preset.
 
--   [ ] Put this thing on packagist
--   [ ] Document requirements, like PHP 7.4
--   [ ] Add a License (MIT)
--   [ ] Document what it does and comes with and the, like, opinions, man.
+## Features
+
+-   Removes minified `.js` and `.css` files from version control
+-   Boilerplate configured for Tailwind `1.x`, Alpine `2.x`, and Livewire `2.x`
+-   Blade components for `app` and `auth` layouts
+-   Livewire components
+    -   Login & Logout
+    -   Register
+    -   Forgot Password (via email)
+    -   Profile
+-   Blade components
+    -   `<x-input>`
+    -   `<x-card>`
+    -   `<x-logo>`
+    -   `<x-button>`
+    -   `<x-inline-flash>`
+-   Tests included for all Livewire components
+
+## Contributing
+
+Find a bug? Have a feature suggestion? This project is open for contribution of ideas and bugfixes -- [create an issue](https://github.com/austenc/cable/issues/new)!
