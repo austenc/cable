@@ -1,11 +1,11 @@
 <?php
 
-namespace AustenCam\Preset\Providers;
+namespace AustenCam\Cable\Providers;
 
-use AustenCam\Preset\Commands\RadCommand;
+use AustenCam\Cable\Commands\CableCommand;
 use Illuminate\Support\ServiceProvider;
 
-class RadProvider extends ServiceProvider
+class CableProvider extends ServiceProvider
 {
     /**
      * Bootstrap the application services.
@@ -16,7 +16,7 @@ class RadProvider extends ServiceProvider
     {
         if ($this->app->runningInConsole()) {
             $this->commands([
-                RadCommand::class,
+                CableCommand::class,
             ]);
         }
     }

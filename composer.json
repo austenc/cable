@@ -1,6 +1,6 @@
 {
-    "name": "austencam/radical-preset",
-    "description": "A Laravel authentication preset with more rad.",
+    "name": "austencam/cable",
+    "description": "A Laravel Livewire authentication preset.",
     "license": "MIT",
     "authors": [
         {
@@ -10,7 +10,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "AustenCam\\Preset\\": "src/"
+            "AustenCam\\Cable\\": "src/"
         }
     },
     "require": {
@@ -19,7 +19,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "AustenCam\\Preset\\Providers\\RadProvider"
+                "AustenCam\\Cable\\Providers\\CableProvider"
             ]
         }
     }

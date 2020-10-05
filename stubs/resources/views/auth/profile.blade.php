@@ -40,7 +40,7 @@
                 </div>
                 <div class="text-right border-t border-gray-200 border-opacity-50 mt-3 pt-3">
                     <div class="flex space-x-5 items-center justify-end">
-                        <x-flash />
+                        <x-inline-flash />
                         <x-button type="submit">Save Changes</x-button>
                     </div>
                 </div>

@@ -1,7 +1,6 @@
-# Radical Laravel Auth Preset
+# Cable
 
-A Laravel authentication boilerplate made for the TALL stack.
-Similar to the TALL stack preset, but with more opinions.
+A Laravel Livewire authentication preset. As in, a bundle of wires.
 
 ## Installation
 
@@ -28,10 +27,10 @@ npm run dev
 
 ## To Do:
 
+-   [x] Come up with a better name 🤔
+-   [x] Clean up the command and/or add prompts
+-   [x] Rename current flash component to `x-inline-flash`
 -   [ ] Add a logo component / partial 🌟
--   [ ] Clean up the command and/or add prompts
--   [ ] Add regular flash messages and rename current one to inline
--   [ ] Come up with a better name 🤔
 -   [ ] Document requirements, like PHP 7.4
--   [ ] Add a License
+-   [ ] Add a License (MIT)
 -   [ ] Document what it does and comes with and the, like, opinions, man.
