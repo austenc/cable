@@ -1,7 +1,10 @@
 <div>
-    <h1 class="mb-2 font-extrabold text-white text-opacity-50 text-center text-xl">Reset Your Password</h1>
+    <div class="my-3">
+        <x-logo class="mx-auto text-white text-opacity-50" />
+    </div>
     <form wire:submit.prevent="sendEmail">
         <x-card class="transition-all duration-500 w-72 border border-gray-400 border-opacity-50 sm:w-96 hover:shadow-2xl transform hover:-translate-y-px">
+            <h1 class="mb-5 font-semibold text-gray-500 text-center text-xl">Reset Your Password</h1>
             <div x-data="{ message: @entangle('message') }" x-show.transition="message" x-cloak class="transition-all duration-300 rounded-sm mb-5 mt-1 shadow overflow-hidden">
                 <div class="border-l-4 bg-primary-50 shadow-xs p-3 border-primary-500 text-primary-700" x-text="message"></div>
             </div>

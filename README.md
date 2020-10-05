@@ -27,10 +27,7 @@ npm run dev
 
 ## To Do:
 
--   [x] Come up with a better name 🤔
--   [x] Clean up the command and/or add prompts
--   [x] Rename current flash component to `x-inline-flash`
--   [ ] Add a logo component / partial 🌟
+-   [ ] Put this thing on packagist
 -   [ ] Document requirements, like PHP 7.4
 -   [ ] Add a License (MIT)
 -   [ ] Document what it does and comes with and the, like, opinions, man.

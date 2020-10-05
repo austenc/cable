@@ -1,5 +1,7 @@
 <div>
-    <h1 class="mb-2 font-extrabold text-white text-opacity-50 text-center text-xl">Sign In</h1>
+    <div class="my-3">
+        <x-logo class="mx-auto text-white text-opacity-50" />
+    </div>
     <form wire:submit.prevent="login">
         <x-card class="transition-all duration-500 w-72 border border-gray-400 border-opacity-50 sm:w-96 hover:shadow-2xl transform hover:-translate-y-px">
             <div class="">
@@ -9,7 +11,7 @@
                 <x-input wire:model.defer="password" type="password" name="password" label="Password" placeholder="Password" />
             </div>
             <div class="mt-3 flex justify-between items-center">
-                <div class="text-xs font-medium">
+                <div class="text-sm font-medium">
                     <a href="{{ route('password.forgot') }}" class="text-gray-500 hover:text-primary-500">Forgot Password?</a>
                 </div>
                 <div class="text-right text-sm">

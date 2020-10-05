@@ -1,5 +1,8 @@
 <div class="container">
     <div class="mt-8">
+        <div class="my-3">
+            <x-logo class="text-gray-400" />
+        </div>
         <x-card>
             <form wire:submit.prevent="save">
                 <div class="md:flex space-y-4 md:space-y-0">

@@ -1,6 +1,9 @@
 <x-layouts.app>
     <div class="flex h-screen items-center justify-center text-white text-5xl font-bold bg-gradient-to-br from-primary-600 to-secondary-200">
         <div class="text-center">
+            <div class="mb-20">
+                <x-logo class="mx-auto text-white text-opacity-50" />
+            </div>
             @auth
                 <div>
                     Hello, {{ auth()->user()->name }}!
